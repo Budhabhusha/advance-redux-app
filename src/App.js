@@ -4,10 +4,10 @@ import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
 
 function App() {
-  const showCart = useSelector((state)=>state.ui.cartIsVisible)
+  const showCart = useSelector(state=> state.ui.cartIsVisible)
   return (
     <Layout>
-     { showCart && <Cart />}
+      {showCart && <Cart />}
       <Products />
     </Layout>
   );
